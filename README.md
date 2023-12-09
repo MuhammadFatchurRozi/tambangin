@@ -29,4 +29,6 @@
 
 ## Demo
 
+**[Live Demo](https://www.tambangin.wanderify-dev.my.id)**
+
 ![Tambangin](public/images/screenshot.png)
