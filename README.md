@@ -9,7 +9,7 @@
 
 # Local Installation
 
--   run `git clone https://https://github.com/MuhammadFatchurRozi/tambangin.git`
+-   run `git clone https://github.com/MuhammadFatchurRozi/tambangin.git`
 -   run `composer install `
 -   copy .env.example to .env
 -   run `cp .env.example .env`
