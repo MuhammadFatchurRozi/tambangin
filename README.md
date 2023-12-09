@@ -21,10 +21,10 @@
 
 # Account
 
-> Email: dev@dev.com || Password: dev12345
-> Email: admin@gmail.com || Password: 12345678
-> Email: kepalaKantor@gmail.com || Password: 12345678
-> Email: pool@gmail.com || Password: 12345678
+> Email: dev@dev.com || Password: dev12345 <br />
+> Email: admin@gmail.com || Password: 12345678 <br />
+> Email: kepalaKantor@gmail.com || Password: 12345678 <br />
+> Email: pool@gmail.com || Password: 12345678 <br />
 > Email: service@gmail.com || Password: 12345678
 
 ## Demo
