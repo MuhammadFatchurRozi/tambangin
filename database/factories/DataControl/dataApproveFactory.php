@@ -53,7 +53,7 @@ class dataApproveFactory extends Factory
         } elseif ($approve_1 == 1 && $approve_2 == 1) {
             $status = 4 ?? 6;
         } else {
-            $status = 0;
+            $status = 6;
         }
 
         return [
