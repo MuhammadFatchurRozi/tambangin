@@ -8,6 +8,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Kendaraan\driver;
 use App\Models\Kendaraan\kendaraan;
 use App\Models\Pegawai\pegawai;
+use App\Models\DataControl\dataApprove;
 
 class DatabaseSeeder extends Seeder
 {
@@ -27,5 +28,7 @@ class DatabaseSeeder extends Seeder
             JarakTambang\jarakTambangSeeder::class,
             Tambang\tambangSeeder::class,
         ]);
+
+        dataApprove::factory(200)->create();
     }
 }

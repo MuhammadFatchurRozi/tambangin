@@ -72,7 +72,8 @@
                                                     class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                                     <div class="me-2">
                                                         <h6 class="mb-0">
-                                                            {{ $getKendaraanService[$i]['nama'] }}</h6>
+                                                            {{ $getKendaraanService[$i]['nama'] }} -
+                                                            {{ $getKendaraanService[$i]['plat_nomor'] }} </h6>
                                                         <small
                                                             class="text-muted d-block mb-1">{{ Str::title($getKendaraanService[$i]['jenis_kendaraan']) }}</small>
                                                     </div>

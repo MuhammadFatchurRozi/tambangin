@@ -4,6 +4,9 @@ namespace Database\Factories\Pegawai;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+// Call Models
+use App\Models\Pegawai\pegawai;
+
 use Illuminate\Support\Str;
 
 /**
@@ -18,7 +21,17 @@ class pegawaiFactory extends Factory
      */
     public function definition(): array
     {
-        $id_pegawai = 'P' . $this->faker->randomNumber(4);
+        $id_pegawai = 'P' . $this->faker->randomNumber(6, true);
+        
+        // solved duplicate id_pegawai
+        while (true) {
+            $cek = pegawai::where('id_pegawai', $id_pegawai)->first();
+            if ($cek == null) {
+                break;
+            }
+            $id_pegawai = 'P' . $this->faker->randomNumber(6, true);
+        }
+
         return [
             'id' => Str::uuid(), 
             'id_pegawai' => $id_pegawai,
