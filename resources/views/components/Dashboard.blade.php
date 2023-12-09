@@ -53,7 +53,7 @@
             <div class="col-md-6 col-lg-8 order-2 mb-4">
                 <div class="card h-100">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                        <span class="badge bg-danger">Kendaraan Masuk Service {{ date('M Y') }}</span>
+                        <span class="badge bg-danger">Kendaraan Segera Di Service {{ date('M Y') }}</span>
                     </div>
                     <div class="card-body">
                         <ul class="p-0 m-0">

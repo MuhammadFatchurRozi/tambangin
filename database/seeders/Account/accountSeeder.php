@@ -18,9 +18,10 @@ class accountSeeder extends Seeder
     {
         account::create([
             'id' => Str::uuid(),
-            'name' => 'Dev',
+            'name' => 'Developer',
             'email' => 'dev@dev.com',
             'password' => bcrypt('dev12345'),
+            'role' => 1,
         ]);
 
         account::create([
@@ -28,6 +29,7 @@ class accountSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt('12345678'),
+            'role' => 2,
         ]);
 
         account::create([
@@ -35,6 +37,7 @@ class accountSeeder extends Seeder
             'name' => 'Kepala-Kantor',
             'email' => 'kepalaKantor@gmail.com',
             'password' => bcrypt('12345678'),
+            'role' => 3,
         ]);
 
         account::create([
@@ -42,6 +45,7 @@ class accountSeeder extends Seeder
             'name' => 'Pool',
             'email' => 'pool@gmail.com',
             'password' => bcrypt('12345678'),
+            'role' => 4,
         ]);
 
         account::create([
@@ -49,6 +53,7 @@ class accountSeeder extends Seeder
             'name' => 'Service',
             'email' => 'service@gmail.com',
             'password' => bcrypt('12345678'),
+            'role' => 5,
         ]);
     }
 }
