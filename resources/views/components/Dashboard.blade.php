@@ -12,13 +12,13 @@
                                 <h5 class="card-title text-primary">Welcome {{ Auth::user()->getRole->message }}! 🎉
                                 </h5>
                                 <p class="mb-4">
-                                    Kamu dapat melihat data pegawai yang telah terdaftar di sini.
+                                    Kamu dapat melihat data approve yang telah terdaftar di sini.
                                 </p>
 
                                 <form action="{{ route(Auth::user()->getRole->nama_role . '.data-approve.index') }}"
                                     method="GET">
                                     <button type="submit" class="btn btn-outline-primary">
-                                        View Approve
+                                        Data Approve
                                     </button>
                                 </form>
                             </div>
