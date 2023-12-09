@@ -49,7 +49,6 @@
                                     <th>Nama Driver</th>
                                     <th>Selesai</th>
                                     <th>Edit</th>
-                                    {{-- <th>Delete</th> --}}
                                 </tr>
                             </thead>
                             <tbody class="text-center" style="vertical-align:middle;">
@@ -78,6 +77,8 @@
                                                 <span class="badge bg-danger">Rejected</span>
                                             @elseif($ac->status == 6)
                                                 <span class="badge bg-success">Selesai</span>
+                                            @else
+                                                <span class="badge bg-danger">Canceled</span>
                                             @endif
                                         <td>
                                             <form action="{{ route('superAdmin.data-approve.update', $ac->id) }}"
@@ -97,14 +98,6 @@
                                                 Edit
                                             </button>
                                         </td>
-                                        {{-- <td>
-                                            <form action="{{ route('superAdmin.data-approve.destroy', $ac->id) }}"
-                                                method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                            </form>
-                                        </td> --}}
                                     </tr>
                                 @empty
                                     <div class="alert alert-danger text-center">
